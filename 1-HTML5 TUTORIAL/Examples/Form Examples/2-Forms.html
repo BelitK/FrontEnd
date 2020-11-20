@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form ve Input</title>
+</head>
+
+<body>
+    <form>
+        <p>Cinsiyet</p>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id=famale name="gender">
+        <label for="female">Female</label>
+
+        <p>İlgi Alanınız?</p>
+        <input type="checkbox" id="web">
+        <label for="web">Web development</label>
+        <input type="checkbox" id="photoshop">
+        <label for="photoshop">Photoshop</label>
+        <input type="checkbox" id="madona">
+        <label for="madona">Singing Madona Songs</label>
+
+        <fieldset>
+            <legend>Contact Info</legend>
+            <input type="email" placeholder="Email" required>
+            <input type="telephone" placeholder="Phone number">
+        </fieldset>
+
+        <p>Hangi şekilde iletişim kurmak istiyorsunuz?</p>
+        <select>
+            <option>Email</option>
+            <option>Telefon</option>
+        </select>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+
+</html>

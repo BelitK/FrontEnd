@@ -1,0 +1,30 @@
+/*padding: yazı ile çerçeve arasındaki mesafeyi arttırır*/
+
+/*
+p[title] {
+    border: 5px solid green;
+    padding: 6px;
+}*/
+
+/*
+p[title="CSS Selectors"] {
+    border: 7px dashed gray;
+    padding: 6px;
+}*/
+
+/*
+p[title~="Attribute"] {
+    border: 2px solid yellow;
+    background-color: blueviolet;
+}*/
+
+/*
+a[href^=http] {
+    background-color: aqua;
+    font-style: italic;
+}*/
+
+p[title~="Bilgisayar Programlama"] {
+    background-color: yellow;
+    color: red;
+}

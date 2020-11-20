@@ -1,0 +1,11 @@
+.outher {
+    width: 400px;
+    height: 200px;
+    background: blue;
+}
+
+.inner {
+    width: 100%;
+    height: 50%;
+    background: red;
+}

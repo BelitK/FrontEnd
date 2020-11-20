@@ -1,0 +1,284 @@
+/* FONT SIZES
+http://type-scale.com/?size=16&scale=1.125&text=A%20Visual%20Type%20Scale&webfont=Merriweather%20Sans&font-family=%27Merriweather%20Sans%27%2C%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=#333
+*/
+
+/* ================
+  GLOBAL
+================ */
+
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em; /*16px*/
+  line-height: 1.45;
+  color: #818181;
+  background: #f9f9f9;
+}
+
+h1, h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.2;
+  color: #333;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom:0;
+  font-size: 1.602em;
+  background-color: #4EBBB5;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.125rem 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+}
+
+h2 {
+  margin: 1.414em 0 0.5em;
+}
+
+h2,
+legend {
+  font-size: 1.424em;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+/* ================
+  WRAPPER
+================ */
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+header .wrapper {
+  border-bottom: 3px solid #333;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+/* ================
+  FORM STYLES
+================ */
+
+form {
+  border-top: 2px solid #333;
+  margin-top: 3px;
+  padding: 2em 1em 0;
+  background: rgba(255,255,255,0.7);
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
+label span {
+  display: block;
+  margin-bottom: 7px;
+}
+
+select {
+  color: #818181;
+}
+
+option:disabled {
+  color: #c5c5c5;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  line-height: 1.6;
+  box-sizing: border-box;
+  background: #EFF0F1;
+  color: inherit;
+  border: 3px solid transparent;
+  border-radius: .3125em; /*5px*/
+  padding: .625em; /*10px*/
+  width: 100%;
+  transition: all 0.7s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 3px solid #46698B;
+  background: #FFFFCC;
+}
+
+/*** Warning: non-standard ***/
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9em;
+  text-align: left;
+  color: #c5c5c5;
+}
+
+input#name::placeholder,
+input#email::placeholder {
+  text-align: right;
+  font-style: italic;
+}
+
+/* ================
+  RADIO BUTTONS AND CHECKBOX
+================ */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  align-self: center;
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  outline: 2px solid #46698B;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0.5em 0 1em;
+  list-style: none;
+}
+
+.flex li {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+/* ================
+  FIELDSET AND LEGEND
+================ */
+fieldset {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+legend {
+  color: #333;
+  font-weight: 700;
+  text-align: left;
+}
+
+fieldset div {
+  margin-top: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contact section */
+fieldset:first-child {
+  margin-bottom: 3.125em;
+  padding-bottom: 3.125em;
+  border-bottom: 2px solid #333;
+}
+
+/* Last nested fieldset */
+fieldset:last-of-type > fieldset:last-of-type {
+  margin-top: 0;
+}
+
+/* For the newsletter nested fieldsets */
+fieldset > fieldset legend {
+  font-size: 1em;
+  font-weight: 400;
+  color: #818181;
+  padding-top: 1em;
+  padding-bottom: 0;
+}
+
+/* Textarea label */
+form > fieldset:nth-child(2) > div > label {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* ================
+  BUTTONS
+================ */
+button {
+  background: #4EBBB5;
+  color: #f5f5f5;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%;
+  font-size: 1.266em;
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  box-sizing: border-box;
+}
+
+button:focus {
+  opacity: .7;
+}
+
+button:hover {
+  background: #f5f5f5;
+  border: 1px solid #61a8a4;
+  color: #4ebbb5;
+}
+
+/* ================
+  FOOTER
+================ */
+footer {
+  font-style: italic;
+  text-align: center;
+  padding: 1.5em 0 1em;
+}
+
+
+/* ================
+  MEDIA QUERIES
+================ */
+@media screen and (min-width: 768px) {
+
+  .wrapper {
+    max-width: 60%;
+  }
+
+  fieldset div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  label {
+    width: 40%;
+  }
+
+  label span {
+    margin-bottom: 0;
+  }
+
+  /* Textarea - stack label on top of the textarea and give it full width */
+  form > fieldset:nth-child(2) > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Forms</title>
+</head>
+
+<body>
+    <!-- Post Metodu girilen verileri sunucu tarafına gönderme işlevi görür -->
+    <form method="POST">
+        <p>
+
+            Ad <input type="text" placeholder="Adınız..." name="ad" required maxlength="10">
+
+        </p>
+        <p>
+            Soyad <input type="text" placeholder="Soyadınız..." name="soyad" required>
+        </p>
+        <p>
+            Email <input type="password" placeholder="Email..." name="email">
+        </p>
+        <p>
+            Beni Hatırla <input type="checkbox">
+        </p>
+        <p>
+            Erkek <input type="radio" name="cinsiyet">
+            Kadın <input type="radio" name="cinsiyet">
+        </p>
+        <p>
+            Hobiler <br>
+
+            Sinema <input type="checkbox" name="hobi">
+            Spor <input type="checkbox" name="hobi">
+            Kitap Okumak <input type="checkbox" name="hobi">
+        </p>
+        <p>
+            <select name="sehir">
+                <option>Lütfen Seçiniz...</option>
+                <option>Kocaeli</option>
+                <option>Bursa</option>
+                <option>İstanbul</option>
+            </select>
+        </p>
+        <p>
+            <select multiple name="sehirler">
+                <option>Kocaeli</option>
+                <option>Bursa</option>
+                <option>İstanbul</option>
+            </select>
+        </p>
+
+        <input type="submit" value="Kaydet">
+
+    </form>
+
+</body>
+
+</html>

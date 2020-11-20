@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    color: #545457;
+    font-size: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span {
+    font-family: sans-serif;
+}
+
+button {
+    display: block;
+    font-size: 20px;
+    margin: 30px, 0;
+    text-align: center;
+}
+
+
+/*NAVIGATION MENU*/
+
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    max-height: 60px;
+    margin: 10px;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    color: grey;
+    border-bottom: solid 2px gray;
+}
+
+
+/*NAVIGATION MENU*/
+
+
+/*HEADER*/
+
+#header-banner {
+    background-image: url("img/header.jpg");
+    height: 400px;
+    padding: 150px 10%;
+}
+
+.callToAct {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 25px;
+    color: #545457;
+}
+
+#header-banner button {
+    width: 200px;
+    position: absolute;
+}

@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.demo {
+    width: 700px;
+    height: 700px;
+    background: #009688;
+    margin: 50px auto;
+    /*kutu hizala*/
+    flex-basis: 25%;
+}
+
+.demo-inner {
+    width: 150px;
+    height: 150px;
+    background: red;
+    font-size: 24px;
+    color: #fff;
+}
+
+.demo-inner:nth-child(1) {
+    background-color: #8bc34a;
+    /*flex-basis: 50%;*/
+    flex-basis: 30%;
+    /*flex-grow: 2;*/
+}
+
+.demo-inner:nth-child(2) {
+    background: #ffeb3b;
+    flex-basis: 20%;
+}
+
+.demo-inner:nth-child(3) {
+    background: black;
+    flex-basis: 40%;
+}
+
+.demo-inner:nth-child(4) {
+    background: blue;
+    /*flex-basis: 10%;*/
+    flex: 1;
+}

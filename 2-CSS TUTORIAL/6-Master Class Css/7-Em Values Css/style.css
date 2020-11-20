@@ -1,0 +1,19 @@
+/* 
+em  pixel ölçüsü
+1em 16px default browser style
+1em base value
+*/
+
+
+/* 
+Relative Browser yazı tipi değerleri üzerinden atama yapar.
+Absolute Bilinen yazı tipi üzerinden ata yapar.
+*/
+
+.relative {
+    font-size: 2em;
+}
+
+.absolute {
+    font-size: 32px;
+}
