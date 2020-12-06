@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid</title>
+    <style>
+        #outer-grid {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 8px;
+        }
+
+        #outer-grid>div {
+            background-color: limegreen;
+            color: white;
+            font-size: 4vh;
+            padding: 8px;
+        }
+
+        #inner-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 5px;
+        }
+
+
+        #inner-grid>div {
+            background: lightgreen;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer-grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div id="inner-grid">
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-5</title>
+    <style>
+        .myform {
+            display: grid;
+            grid-template-columns: [labels] auto [controls] 1fr;
+            grid-auto-flow: row;
+            grid-gap: .8em;
+            background: beige;
+            padding: 1.2em;
+        }
+
+        .myform>label {
+            grid-column: labels;
+            grid-row: auto;
+        }
+
+        .myform>input,
+        .myform>textarea {
+            grid-column: controls;
+            grid-row: auto;
+        }
+
+        .myform>button {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="myform">
+        <label for="customer_name">Name </label>
+        <input type="text" name="customer_name" id="customer_name" required>
+
+        <label for="email_address">Email </label>
+        <input type="email" name="email_address" id="email_address">
+
+        <label for="comments">Comments </label>
+        <textarea name="comments" id="comments" maxlength="500"> </textarea>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
